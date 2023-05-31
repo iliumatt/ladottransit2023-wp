@@ -11,8 +11,11 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:       
 */
+html{
+	background: #011e48;
+}
 body{
-    background-color: #f5f5f5;
+    background-color: #011e48;
     word-break: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -609,7 +612,7 @@ position: relative;
     font-size: 18px;
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
-    line-height: 40px;
+    line-height: 1.2em;
     height: 40px;
     padding: 0px 10px 0px 10px;
     vertical-align: baseline;
@@ -623,9 +626,11 @@ position: relative;
     border: 0;
     border-radius: 0;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: normal;
     outline: none;
+	display: flex;
+	align-items: center;
 }
 #mega-menu-wrap-primary #mega-menu-primary li.mega-disable-link > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu li.mega-disable-link > a.mega-menu-link {
     cursor: inherit;
@@ -892,6 +897,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+/*
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item a.mega-menu-link:before {
     display: inline-block;
     font: inherit;
@@ -907,6 +913,7 @@ html {
     width: auto;
     top: auto;
 }
+*/
 #mega-menu-wrap-primary:before, #mega-menu-wrap-primary #mega-menu-primary:before, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu:before, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item:before, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-row:before, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-column:before, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link:before, #mega-menu-wrap-primary #mega-menu-primary span.mega-menu-badge:before, #mega-menu-wrap-primary:after, #mega-menu-wrap-primary #mega-menu-primary:after, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu:after, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item:after, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-row:after, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-column:after, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link:after, #mega-menu-wrap-primary #mega-menu-primary span.mega-menu-badge:after {
     display: none;
 }
@@ -978,9 +985,9 @@ ul.mega-sub-menu {
     
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
-    font-size: 15px;
+	font-size: 1.2em;
     padding: 12px 10px;
-    line-height: 24px;
+    line-height: 1.5em;
 }
 /* PRE-FOOTER MENU */
 
@@ -1016,6 +1023,7 @@ ul.mega-sub-menu {
     background-color: #041a2d;
     transition: all 0.3s ease;
 }
+
 #menu-bottom-menu li {
     display: inline-block;
     width: 33.33%;
@@ -1027,6 +1035,7 @@ ul.mega-sub-menu {
 
 #menu-bottom-menu a:hover .fas:before{
     color: #abd8fd;
+	transition: all 0.3s ease;
 }
 
 .pf-menu ul li a:hover{
@@ -2244,7 +2253,10 @@ div.alerts-sw:has(a:hover),
 }
 */
 
-
+.icon-hp {
+    font-size: .9em;
+    margin-right: 0.3em;
+}
 
     #hp-ext h2,
     #whatsnew .ui-block-b h2{
@@ -2750,7 +2762,8 @@ p.dos{
     position: relative;
     padding: 12px 0 0 0;
     margin-bottom: .3em;
-	z-index: -2;
+	/* PREVENT OPEN MENU OVERLAY */
+	z-index: 0;
 }
 .routetitle .button-primary{
     text-shadow: none;
