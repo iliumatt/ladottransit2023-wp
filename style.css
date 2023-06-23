@@ -23,13 +23,10 @@ body{
 	overflow-x:hidden;
 }
 
-/* SHADOW ON LAST SECT BEFORE FOOTER - 2nd TO LAST SECTION SHOULD BE RELATIVE – HIDES TOP OF SHADOW */
 
-#content .boldgrid-section:last-child{
-/*
-    box-shadow: rgb(1 16 59 / 10%) 0px 0px 12px 6px;
-    padding-bottom: 45px;
-*/
+.pf-menu{
+    box-shadow: 0 3px 6px rgba(0,0,0,.3);
+/*    padding-bottom: 45px;*/
 }
 .btn, .button-primary, .button-secondary {
     white-space: normal;
@@ -4089,7 +4086,7 @@ tfoot p {
 .routetitle h2{
 	line-height: 1em!important;
 }
-/* WHY IS THIS NECESSARY?*/
+/* WHY WAS THIS NECESSARY? TOO MANY "&shy;"s? */
 /*
 .palette-primary .routetitle h2.nopic{
     hyphens:none;
@@ -4206,22 +4203,6 @@ tfoot p {
 .circle-cxb{
 	background: #AD5893;
 }
-
-
-/* fix DASH menu active state */
-/*
-#mainmenu .ui-group-theme-b .ui-btn:active,
-#mainmenu .ui-group-theme-b .ui-btn:focus
-{
-	color: #ffffff!important;
-    background-color:#0073A8;
-    text-shadow: 1px 1px 1px #cccccc;
-}
-
-html body .ui-group-theme-b .ui-btn:after{
-	background-color:#0073A8;
-}
-*/
 
 .beachwood,
 .circle-beachwood,
