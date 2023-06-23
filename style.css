@@ -199,11 +199,6 @@ body.search .jumbotron{
 		padding: 0 0 0 7px;
 	}
 
-/*
-    #searchform button[type="submit"] {
-        right: 0;
-    }
-*/
 }
 
 
@@ -220,15 +215,7 @@ body.search .jumbotron{
     }
 	
 }
-/*
-p,
-.site-content,
-.site-header,
-.site-footer{
-    margin-top: 0.39em;
-    font-size: .87em!important;
-}
-*/
+
 .site-footer .textwidget p{
     line-height: 1.5em!important;
     margin-top: 0.217em;
@@ -259,6 +246,7 @@ h5{
 
 /*SECTIONS*/
 
+/*
 #sct-dtd-imap{
     padding-top: 0;
 }
@@ -278,6 +266,7 @@ h5{
 #sct-dte-sked{
     padding-top: 0;
 }
+*/
 
 /* END SECTIONS */
 
@@ -298,8 +287,6 @@ h2.heading-center{
     max-width: 120px !important;
     height: auto !important;
 }
-.palette-primary .site-header .site-title > a{
-}
 
 .custom-logo-link:not(.bgc_logo) {
     margin-bottom: 0;
@@ -318,94 +305,6 @@ h2.heading-center{
     width: 129px!important;
 }
 
-/*
-#masthead .col-lg-1,
-#masthead .col-lg-2,
-#masthead .col-lg-3,
-#masthead .col-lg-4,
-#masthead .col-lg-5,
-#masthead .col-lg-6,
-#masthead .col-lg-7,
-#masthead .col-lg-8,
-#masthead .col-lg-9,
-#masthead .col-lg-10,
-#masthead .col-lg-11,
-#masthead .col-lg-12,
-#masthead .col-md-1,
-#masthead .col-md-2,
-#masthead .col-md-3,
-#masthead .col-md-4,
-#masthead .col-md-5,
-#masthead .col-md-6,
-#masthead .col-md-7,
-#masthead .col-md-8,
-#masthead .col-md-9,
-#masthead .col-md-10,
-#masthead .col-md-11,
-#masthead .col-md-12,
-#masthead .col-sm-1,
-#masthead .col-sm-2,
-#masthead .col-sm-3,
-#masthead .col-sm-4,
-#masthead .col-sm-5,
-#masthead .col-sm-6,
-#masthead .col-sm-7,
-#masthead .col-sm-8,
-#masthead .col-sm-9,
-.col-sm-10,
-.col-sm-11, 
-.col-sm-12,
-.col-xs-1,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12{
-	padding-left:0;
-	padding-right: 0;
-}
-*/
-
-/*
-@media screen and (min-width:768px){
-#masthead .header-1,
-#masthead .header-2,
-#masthead .header-3,
-#masthead .header-4,
-#masthead .header-5,
-#masthead .header-6,
-#masthead .header-7,
-#masthead .header-8,
-#masthead .header-9,
-#masthead .header-10,
-#masthead .header-11
-	{
-		padding-left:0;
-		padding-right: 0;
-	}
-}
-*/
-/*
-#masthead .container .site-description {
-    padding-left: 0;
-	font-size: 33px;
-	font-family:'Calibri W01 Bold_904607'!important;
-    visibility: visible!important;
-    color:#A7C539;
-    line-height: 30px;
-    margin: 21px 0 24px 0;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-
-}
-*/
 h3.site-description.site-description {
     position: absolute;
     left: -9999px;
