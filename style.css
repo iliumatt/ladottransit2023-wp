@@ -2179,7 +2179,9 @@ div.alerts-sw:has(a:hover),
 
 #hp-ext h3,
 #alerts h3,
-#whatsnew .routesections h3{
+#whatsnew .routesections h3,
+#ra-dash h3,
+#ra-cx h3{
     font-family: "Calibri W01 Bold_904607";
     font-size: 1.5em;
     line-height: 1;
