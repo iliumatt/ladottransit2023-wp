@@ -357,14 +357,8 @@ position: relative;
 }
 
 @media screen and (min-width:768px) and (max-width:992px){
-/*
-	aside.widget_search{
 
-		position: absolute;
-		right: 0;
-		top:-6px;
-	}
-*/
+	
 }
 
 
@@ -464,18 +458,12 @@ position: relative;
 }
 @media only screen and (max-width: 9999px){	
 
-				#mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary {
-					background: #040e22;
-					/* background: linear-gradient(to bottom, #00447c, #0a5592); */
-			/*
-					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00447C', endColorstr='#FF0A5592');
-					padding: 0px 0px 0px 0px;
-					display: none;
-			*/
-				}
-				#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
-					background: #002849;
-				}
+			#mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary {
+				background: #040e22;
+			}
+			#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
+				background: #002849;
+			}
 
 			#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
 					background: #002849;
