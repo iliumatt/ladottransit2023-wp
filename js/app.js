@@ -978,9 +978,16 @@ jQuery(document).ready(function(){
     jQuery('<div class="tablebottom" style="background-color:' + tableBottomColor+'"></div>').insertAfter(jQuery(this).parent());
     });
 	//match colored footer width to table
-	 jQuery('table').each(function(){
+	 jQuery('table:visible').each(function(){
 		var tableWidth = jQuery( this ).css( 'width' );
+		 //get width of container, if table wider, insert "swipe horizontally" msg - not working?
+		 var tableContainerWidth = jQuery(this.parent).css( 'width' );
 				jQuery( this ).next('.tablebottom' ).css('width', tableWidth);
+		 		if(tableWidth > tableContainerWidth){
+					
+				}
+		 //below displayed with %, not px... why?
+		 console.log(tableWidth);
 	 });
     
 
