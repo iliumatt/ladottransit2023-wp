@@ -978,17 +978,40 @@ jQuery(document).ready(function(){
     jQuery('<div class="tablebottom" style="background-color:' + tableBottomColor+'"></div>').insertAfter(jQuery(this).parent());
     });
 	//match colored footer width to table
-	 jQuery('table:visible').each(function(){
-		var tableWidth = jQuery( this ).css( 'width' );
-		 //get width of container, if table wider, insert "swipe horizontally" msg - not working?
-		 var tableContainerWidth = jQuery(this.parent).css( 'width' );
-				jQuery( this ).next('.tablebottom' ).css('width', tableWidth);
-		 		if(tableWidth > tableContainerWidth){
-					
-				}
-		 //below displayed with %, not px... why?
-		 console.log(tableWidth);
-	 });
+//	if(jQuery("table.sked").is(":visible")){
+//		console.log("table is visible");
+//	}
+	jQuery("table.sked").each(function(){
+		
+		
+	})
+	
+	jQuery('.panel-collapse').on('shown.bs.collapse', function () {
+		var tableWidth = jQuery( '.panel-collapse table' ).css( 'width' );
+		var tableContainerWidth = jQuery(this).css( 'width' );
+		if(jQuery("table.sked").is(":visible")){
+//			console.log(tableWidth + " " + tableContainerWidth);
+			if(jQuery(tableWidth > tableContainerWidth)){
+//				console.log("SWIPE!")
+				jQuery(this).find('.mapSwipeWrap').remove();
+				// this selector belown is almost close... but is inserted everywhere, not just the current expanded table???
+				jQuery(this).children('.panel-body').children('[data-role="collapsible"]').children('h4').after('<div class="swiper">&lt;&lt; SWIPE TO VIEW FULL SCHEDULE &gt;&gt;</div>');
+			}
+		}
+});
+		
+	
+//	jQuery('table:visible').each(function(){
+//		var tableWidth = jQuery( this ).css( 'width' );
+//		//get width of container, if table wider, insert "swipe horizontally" msg - not working?
+//		var tableContainerWidth = jQuery(this.parent).css( 'width' );
+//			jQuery( this ).next('.tablebottom' ).css('width', tableWidth);
+//			if(tableWidth > tableContainerWidth){
+//					
+//				}
+//		//below displayed with %, not px... why?
+//		console.log(tableWidth);
+//	});
     
 
     
